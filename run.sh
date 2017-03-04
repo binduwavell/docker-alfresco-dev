@@ -7,4 +7,5 @@ docker run -it \
            -p 8080:8080 \
            -p 8443:8443 \
            -v $(pwd)/host:/host \
+           --name alfresco_$ALF_VERSION \
            alfresco:$ALF_VERSION "$@"
